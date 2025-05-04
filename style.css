@@ -1,0 +1,44 @@
+.bg-1{
+    background-color: #1E0342;
+}
+
+#github{
+    height: 42px;
+}
+
+#navbar{
+    display: flex;
+    justify-content: center;
+    gap: 1px;
+}
+
+#menu-navbar{
+    display: block;
+    transition: 0.5s ease-in-out;
+}
+
+#nav-link{
+    padding: 5px 15px 5px 15px ;
+    font-size: 16px;
+    text-decoration: none;
+    border-bottom: 1px solid #1E0342;
+    color: #E1F7F5;
+    transition: 0.5s ease-in-out;
+}
+
+.fa-bars{
+    font-size: 20px;
+}
+
+#nav-link:hover{
+    border-bottom: 1px solid #E1F7F5;
+}
+
+@media only screen and (max-width: 600px) {
+    #navbar{
+      flex-direction: column;
+    }
+    #menu-navbar{
+        display: none;
+    }
+  }
