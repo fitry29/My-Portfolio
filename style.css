@@ -41,4 +41,7 @@
     #menu-navbar{
         display: none;
     }
+    #git-logo{
+        margin: 15px 0px;
+    }
   }
