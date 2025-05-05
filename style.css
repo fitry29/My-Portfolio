@@ -72,6 +72,9 @@
     #git-logo{
         margin: 3px 0px;
     }
+    #home-box{
+        padding: 10% 5%;
+    }
   }
 
   /* End Navbar */
@@ -113,4 +116,10 @@
     70% { width: 100%; }
     100% { width: 100%; }
 }
+
+@media only screen and (max-width: 600px) {
+    #home-box{
+        padding: 10% 5%;
+    }
+  }
 
