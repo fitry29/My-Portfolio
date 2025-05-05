@@ -4,6 +4,7 @@
 
 #github{
     height: 42px;
+    transition: 0.5s ease-in-out;
 }
 
 #navbar{
@@ -20,18 +21,42 @@
 #nav-link{
     padding: 5px 15px 5px 15px ;
     font-size: 16px;
+    color: #9AC8CD;
+    display: inline-block;
+    position: relative;
     text-decoration: none;
-    border-bottom: 1px solid #1E0342;
-    color: #E1F7F5;
-    transition: 0.5s ease-in-out;
+    transition: transform 0.25s ease-out;
+}
+
+#nav-link::after{
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transition: transform 0.25s ease-out;
+}
+
+#nav-link:hover::after{
+    transform: scaleX(1);
 }
 
 .fa-bars{
     font-size: 20px;
+    transition: 0.5s ease-in-out;
 }
 
 #nav-link:hover{
-    border-bottom: 1px solid #E1F7F5;
+    color: white;
+}
+.fa-bars:hover{
+    transform: rotate(30deg);
+}
+#github:hover{
+    transform: scale(1.1);
 }
 
 @media only screen and (max-width: 600px) {
@@ -41,7 +66,51 @@
     #menu-navbar{
         display: none;
     }
+    #nav-link{
+        padding: 5px;
+    }
     #git-logo{
-        margin: 15px 0px;
+        margin: 3px 0px;
     }
   }
+
+  /* End Navbar */
+  /* Start Home */
+#home-box{
+    padding: 10% 25%;
+}
+
+#text{
+    color: #ECEFCA;
+}
+
+#type-box{
+    border-radius: 10px;
+    padding: 10px 15px;
+    background-color:  #31046b;
+}
+
+.typing{
+    color: white;
+    border-right: 5px solid black;
+    animation: 
+        blinking 1s steps(1, end) infinite,
+        typing 3s steps(25, end);
+    overflow: hidden;
+    white-space: nowrap;
+    transition: 0.5s ease-in-out;
+}
+
+@keyframes blinking{
+    0% { border-color: transparent; }
+    50% { border-color: white; }
+    100% { border-color: transparent; }
+}
+
+@keyframes typing{
+    0% { width: 0; }
+   
+    70% { width: 100%; }
+    100% { width: 100%; }
+}
+
