@@ -121,14 +121,14 @@
     width: 85%;   
     border-radius: 20%;
     border: 1px solid black;
-    box-shadow: 0 0 25px 5px rgba(255, 255, 255, 0.507);
+    box-shadow: 10px 8px 10px 5px rgba(255, 255, 255, 0.507);
     transition: transform 0.2s ease-out;
 }
 .profile #profile-picture:hover{
     transform: rotate(-20deg);
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 800px) {
     #home-box{
         padding: 10% 5%;
     }
@@ -141,6 +141,35 @@
     .profile{
         justify-content: center;
         display: flex;
+    }
+  }
+
+/* End Home */
+/* Start About Me */
+#about-me-box{
+    padding: 4% 22%;
+}
+#about-me{
+    padding: 30px 50px;
+    border-radius: 10px;
+    background-color: #0000004b;
+    border: 1px solid white;
+}
+.title-about{
+    color: #ECEFCA;
+}
+.about-content{
+    margin-top: 5px;
+    font-size: 20px;
+    word-spacing: 3;
+}
+
+@media only screen and (max-width: 800px) {
+    #about-me-box{
+        padding: 10% 5%;
+    }
+    .about-content{
+        font-size: 16px;
     }
   }
 
