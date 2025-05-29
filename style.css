@@ -1,3 +1,7 @@
+*{
+    font-family:  "Josefin Sans", sans-serif;
+}
+
 .bg-1{
     background-color: #1E0342;
 }
@@ -190,7 +194,7 @@
     padding: 7% 21%;
 }
 .skill-title{
-    color: #1E0342;
+    color: #ECEFCA;
     font-size: 40px;
     font-weight: bold;
     letter-spacing: 2px;
@@ -198,14 +202,20 @@
     margin-bottom: 50px;
 }
 .skill-sec{
+    border-bottom: 2px solid white;
+    border-top: 2px solid #ECEFCA;
     padding: 20px 50px;
-    border-radius: 5px;
-    border: 3px solid #ECEFCA;
+    border-radius: 15px;
+    /* border: 3px solid #ECEFCA; */
     text-align: start;
     margin: 30px 0px;
 }
 .skill-logo{
     width: 80px;
+    transition: 0.2s ease-in-out ;
+}
+.skill-logo:hover{
+    transform: scale(1.1);
 }
 @media only screen and (max-width: 800px) {
     #skills-box{
